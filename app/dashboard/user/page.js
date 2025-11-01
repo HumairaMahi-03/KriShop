@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useSession } from 'next-auth/react';
 import React, { useEffect, useState } from 'react';
 
-const userDashboard = () => {
+const UserDashboard = () => {
     const [orderedProducts, setOrderedProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const { data: session, status } = useSession();
@@ -77,4 +77,4 @@ const userDashboard = () => {
     );
 };
 
-export default userDashboard;
+export default UserDashboard;
