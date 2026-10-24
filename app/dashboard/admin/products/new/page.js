@@ -195,12 +195,7 @@ const NewProductPage = () => {
                     </div>
                 </div>
 
-                {/* isFeatured */}
-                <div className="flex items-center">
-                    <input id="isFeatured" name="isFeatured" type="checkbox" checked={formData.isFeatured} onChange={handleChange} className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500" />
-                    <label htmlFor="isFeatured" className="ml-2 block text-sm text-gray-900">Featured Product</label>
-                </div>
-
+                
                 {error && <p className="text-red-500 text-sm">{error}</p>}
 
                 <div>
